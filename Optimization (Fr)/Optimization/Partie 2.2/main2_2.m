@@ -1,4 +1,3 @@
-%% VARIABLES A executer
 Espion=load('ProbaInterception.txt');
 for i=1:15
     for j=1:15

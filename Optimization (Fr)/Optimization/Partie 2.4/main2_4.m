@@ -31,11 +31,10 @@ for i=1:length(noeuds(:,1))
 end
 
 g.path=temp;
-%On rajoute le pinit à la semaine 1 et pfin à la
-%dernière semaine
+
 g.cout=cout+Data(1)*(ploc+pinit)+Data(l)*pfin; 
 disp(['cout stratégie optimale : ',num2str(g.cout)])
 plot(1:(length(temp)+2),[0,temp,0],'g')
 hold on
-plot(1:(length(temp)+2),[0,Data,0],'b')
+plot(1:(length(temp)+2),[0,Data,0],'r')
 legend('Stratégie optimale','Besoins pour la semaine i')
